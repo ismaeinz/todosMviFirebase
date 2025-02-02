@@ -6,6 +6,7 @@ plugins {
     id("com.google.devtools.ksp")
     id("kotlin-kapt")
     id("com.google.dagger.hilt.android")
+    id("com.google.gms.google-services")
 
 
 }
@@ -67,14 +68,13 @@ dependencies {
 
 
     // Firebase BOM version
-    implementation(platform("com.google.firebase:firebase-bom:32.1.1"))
+    implementation(platform("com.google.firebase:firebase-bom:33.8.0"))
 
     // Google Analytics
     implementation("com.google.firebase:firebase-analytics-ktx")
 
     // Firebase Cloud Firestore
     implementation("com.google.firebase:firebase-firestore-ktx")
-
 
     // Lottie
     implementation("com.airbnb.android:lottie-compose:5.2.0")
